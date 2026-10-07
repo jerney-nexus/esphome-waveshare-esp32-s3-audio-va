@@ -200,8 +200,8 @@ api:
   id: api_id
   # No encryption: this is a LAN-only device on a trusted network, same as the
   # sibling Guition project. To lock it down, add:
-  #   encryption:
-  #     key: !secret api_encryption_key
+  encryption:
+    key: !secret api_encryption_key
   # and put the base64 key in your dashboard's secrets.
   actions:
     - action: start_va
